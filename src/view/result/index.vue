@@ -8,33 +8,37 @@
     </div>
     <div class="main wrapper">
       <div class="top-result container">
-        <h1>该项目的996指数是：</h1>
+        <h1 v-if="result.isStandardProject">该项目的996指数是：</h1>
         <div class="result-line">
-          <div class="score-box">
+          <div class="score-box" v-if="result.isStandardProject">
             <div class="score-number">{{ result.index996 }}</div>
             <div class="subtitle">{{ result.index996Str }}</div>
           </div>
           <div class="content">
-            <p>
+            <p v-if="result.isStandardProject">
               推测你们的工作时间类型为：
-              <span>{{ result.workingType }}</span>
+              <span class="p1">{{ result.workingType }}</span>
+              <span class="p2">({{ result.workingTypeStr }})</span>
+            </p>
+            <p v-if="result.isStandardProject">
+              推测你们的加班时间占比为：
+              <span class="p1">{{ result.overTimeRadio }}%</span>
+              <span class="p2" v-if="result.index996 < 0">(工作不饱和)</span>
             </p>
             <p>
               总 commit 数：
-              <span>{{ result.totalCount }}</span>
+              <span class="p1">{{ result.totalCount }}</span>
             </p>
             <p>
               分析时间段：
-              <span>{{ result.timeStr }}</span>
+              <span class="p1">{{ result.timeStr }}</span>
             </p>
-            <div className="exp">
-              <p>
-                996指数：为0则不加班，值越大代表加班越严重，996工作制对应的值为100。
-                <a>具体可参考下方表格</a>
-              </p>
-            </div>
           </div>
         </div>
+        <p class="exp" v-if="result.isStandardProject">
+          996指数：为0则不加班，值越大代表加班越严重，996工作制对应的值为100，负值说明工作非常轻松。
+          <a @click="scrollTo">具体可参考下方表格</a>
+        </p>
       </div>
       <div class="content container">
         <div class="section">
@@ -58,7 +62,7 @@
           </div>
         </div>
       </div>
-      <h2>工作时间参照表：</h2>
+      <h2 id="compare-table">工作时间参照表：</h2>
       <CompareTable :index996="result.index996" />
       <div class="container">
         <h2 class="title">注意事项：</h2>
@@ -89,7 +93,16 @@ const result = ref<any>({})
 
 function init() {
   const { hourData, weekData, timeStr, totalCount } = getRoutesMeta()
-  const { workingType, index996, index996Str, workHourPl, workWeekPl } = getResult()
+  const {
+    workingType,
+    workingTypeStr,
+    index996,
+    index996Str,
+    overTimeRadio,
+    isStandardProject,
+    workHourPl,
+    workWeekPl,
+  } = getResult()
 
   hourResult.value = [...hourData]
   weekResult.value = [...weekData]
@@ -98,10 +111,20 @@ function init() {
 
   result.value = {
     workingType,
+    workingTypeStr,
     totalCount,
     timeStr,
     index996,
     index996Str,
+    overTimeRadio,
+    isStandardProject,
+  }
+}
+
+const scrollTo = () => {
+  const el = document.getElementById('compare-table')
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
   }
 }
 

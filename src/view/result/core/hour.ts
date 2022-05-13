@@ -74,7 +74,7 @@ function getWorkingTime(hourData: TimeCount[] = [], openingTime: TimeCount) {
   const workingTimeCount = workingTime.reduce((total, item) => total + item.count, 0)
   const workingElseTimeCount = workingElseTime.reduce((total, item) => total + item.count, 0)
 
-  // 获取效率最高的前 9 个小时
+  // 获取效率最高的前 9 个小时（适用开源项目）
   const sortData = hourData.sort((a, b) => b.count - a.count)
   const top9Time = sortData.slice(0, 9)
   const top9ElseTime = sortData.slice(9, sortData.length + 1)
