@@ -1,7 +1,7 @@
 {
   "name": "code996",
-  "version": "0.1.0",
-  "description": "code996 是一个命令行脚本，它可以计算 git 项目的 commit 时间分布规律，进而推导出这个项目的工作强度。",
+  "version": "0.1.1",
+  "description": "code996 是一个命令行脚本，它可以统计 Git 项目的 commit 时间分布，进而推导出这个项目的工作强度。",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

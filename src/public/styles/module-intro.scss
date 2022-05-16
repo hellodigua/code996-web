@@ -81,6 +81,38 @@
     background-color: transparent;
     color: #ddd;
 
+    > :last-child {
+      margin-bottom: 0 !important;
+    }
+
+    li {
+      > p {
+        margin-top: 16px;
+      }
+      + li {
+        margin-top: 0.25em;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 6px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+      font-size: 12px;
+      word-wrap: normal;
+    }
+
     .overflow-x {
       width: 100%;
       overflow-x: auto;

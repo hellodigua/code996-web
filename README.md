@@ -17,12 +17,12 @@ Mac 或 Linux 用户：
 **在 Git 项目的根目录**，执行以下命令：
 
 ```
-/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh)"
+/bin/bash -c "$(curl -fsSL /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/hellodigua/code996/master/bin/code996.sh)")"
 ```
 
 Windows 用户：
 
-下载该脚本 `https://cdn.jsdelivr.net/npm/code996@latest/bin/code996.sh`
+下载该脚本 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/hellodigua/code996/master/bin/code996.sh)"`
 
 然后将该脚本移至要分析的 Git 项目目录，并执行以下命令：
 
