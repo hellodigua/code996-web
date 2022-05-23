@@ -97,9 +97,7 @@ sh code996.sh
 
 ## 贡献者
 
-- [YLinXin](https://github.com/YLinXin)：负责 shell 的编写工作
-- [Nekotora](https://flag.moe/)：负责 Web 端的页面样式开发
-- [Xuemuyang](https://github.com/Xuemuyang)：负责文档勘误
+[YLinXin](https://github.com/YLinXin) | [YLinXin](https://github.com/YLinXin) | [Nekotora](https://flag.moe/) | [Xuemuyang](https://github.com/Xuemuyang)
 
 ## 友情链接
 
