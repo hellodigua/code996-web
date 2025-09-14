@@ -116,11 +116,11 @@ by_day_result=`echo "$by_day_result"|sed -E 's/,$//g'`
 by_hour_result=`echo "$by_hour_result"|sed -E 's/,$//g'`
 
 
-result=$time_start"_"$time_end"&week="$by_day_result"&hour="$by_hour_result"&lang=en"
+result=$time_start"_"$time_end"&week="$by_day_result"&hour="$by_hour_result
 
-# default site
-github_url="https://hellodigua.github.io/code996/#/result?time=$result"
-vercel_url="https://code996.vercel.app/#/result?time=$result"
+# default site - English routes
+github_url="https://hellodigua.github.io/code996/#/en/result?time=$result"
+vercel_url="https://code996.vercel.app/#/en/result?time=$result"
 
 echo
 echo -e "${NC}You can manually click the url below when you want to see the result if something goes wrong："

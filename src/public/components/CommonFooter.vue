@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="wrapper">
       <p>
-        切换镜像节点：
+        {{ t('common.switchMirror') }}
         <template v-for="item in mirrorList">
           <a :href="item.url">{{ item.label }}</a>
           <span>&nbsp;</span>
@@ -17,13 +17,17 @@
         </a>
       </p>
       <p>
-        Made with ❤️ by
+        {{ t('common.madeWithLove') }}
         <a target="_blank" href="https://github.com/hellodigua">digua</a>
       </p>
     </div>
   </div>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 let url = window.location.href
 let hash = window.location.hash
 

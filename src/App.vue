@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <github-corner />
+    <language-switcher />
     <div class="app-container">
       <router-view></router-view>
     </div>
@@ -11,6 +12,7 @@
 <script setup lang="ts">
 import CommonFooter from './public/components/CommonFooter.vue'
 import GithubCorner from './public/components/GithubCorner.vue'
+import LanguageSwitcher from './public/components/LanguageSwitcher.vue'
 </script>
 
 <style lang="scss">
