@@ -104,7 +104,7 @@ iwr https://fastly.jsdelivr.net/gh/hellodigua/code996/bin/code996.ps1 -OutFile (
 
 ## 使用许可
 
-本程序及其源码和编译产物附属 [Unlicense](LICENSE) 许可，其依赖的相关库和内容不做许可承诺，请参考他们的原始许可。
+本程序及其源码和编译产物附属 [MIT License](LICENSE) 许可，其依赖的相关库和内容不做许可承诺，请参考他们的原始许可。
 
 ![license](https://img.shields.io/github/license/hellodigua/code996)
 ![](https://img.shields.io/jsdelivr/gh/hm/hellodigua/code996)

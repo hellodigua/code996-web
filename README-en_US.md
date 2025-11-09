@@ -95,4 +95,4 @@ We have listed below some of the possible consequences of using this program, pl
 
 ## License
 
-This program and its source code and compiled products are subject to the [Unlicense](LICENSE) license, and its dependencies on related libraries and content are not licensed under promise, please refer to their original licenses.
+This program and its source code and compiled products are subject to the [MIT License](LICENSE) license, and its dependencies on related libraries and content are not licensed under promise, please refer to their original licenses.

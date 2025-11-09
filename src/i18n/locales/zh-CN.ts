@@ -5,7 +5,6 @@ export default {
     switchMirror: '切换镜像节点',
     madeWithLove: 'Made with ❤️ by',
     // 新增页脚文案
-    proudlyUsing: '自豪的采用',
     license: '协议',
   },
   nav: {
@@ -16,7 +15,8 @@ export default {
     subtitle: 'code996 是一个分析工具，它可以统计 Git 项目的 commit 时间分布，进而推导出这个项目的编码工作强度。',
     howToUse: {
       title: '如何使用',
-      localAnalysis: '本地分析：在 Git 项目的根目录，执行以下命令：',
+      nodeJsTip: '如果你有 Node.js 环境，只需在 Git 项目的根目录执行以下命令：',
+      localAnalysis: '你也可以选择运行 shell 命令：（此为旧版本，功能更少）',
       scriptUrl: 'https://fastly.jsdelivr.net/gh/hellodigua/code996/bin/code996.sh',
       onlineAnalysis: '在线分析 Gitlab 项目，可以使用该',
       userscript: '油猴脚本',
@@ -31,8 +31,7 @@ export default {
       title: '它有什么用',
       intro: '它可以帮助你分辨 996 的公司和行为并远离它，具体包括：',
       point1: '1. 在入职的当天即可知道新公司的加班情况如何',
-      point2: '2. 揪出公司里的卷王',
-      point3: '3. 对比不同项目的加班强度',
+      point2: '2. 对比不同项目的加班强度',
     },
     safety: {
       title: '它安全吗',

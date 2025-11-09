@@ -9,7 +9,7 @@
     "serve": "vite preview"
   },
   "author": "digua",
-  "license": "Unlicense",
+  "license": "MIT",
   "dependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
     "chart.xkcd": "^1.1.13",

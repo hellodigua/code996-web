@@ -9,16 +9,12 @@
         </template>
       </p>
       <p>
-        {{ t('common.proudlyUsing') }}
-        <a target="_blank" href="https://unlicense.org/">Unlicense</a>
-        {{ t('common.license') }} |&nbsp;
+        {{ t('common.madeWithLove') }}
+        <a target="_blank" href="https://github.com/hellodigua">digua</a>
+        <span>&nbsp;&nbsp;</span>
         <a target="_blank" href="https://github.com/hellodigua/code996">
           <img src="https://img.shields.io/github/stars/hellodigua/code996?style=social" alt="" />
         </a>
-      </p>
-      <p>
-        {{ t('common.madeWithLove') }}
-        <a target="_blank" href="https://github.com/hellodigua">digua</a>
       </p>
     </div>
   </div>

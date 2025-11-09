@@ -5,7 +5,6 @@ export default {
     switchMirror: 'Switch Mirror:',
     madeWithLove: 'Made with ❤️ by',
     // 新增页脚文案
-    proudlyUsing: 'Proudly using',
     license: 'license',
   },
   nav: {
@@ -17,7 +16,8 @@ export default {
       'Code996 is an analysis tool that can count the commit time distribution of Git projects, and then deduce the coding work intensity of this project.',
     howToUse: {
       title: 'How to Use',
-      localAnalysis: 'Local analysis: In the root directory of the Git project, execute the following command:',
+      nodeJsTip: 'If you have Node.js environment, simply run the following command in the root directory of your Git project:',
+      localAnalysis: 'You can also choose to run the shell command: (this is the old version with fewer features)',
       scriptUrl: 'https://fastly.jsdelivr.net/gh/hellodigua/code996/bin/code996_en.sh',
       onlineAnalysis: 'For online analysis of Gitlab projects, you can use this',
       userscript: 'userscript',
@@ -33,8 +33,7 @@ export default {
       title: 'What Is It For',
       intro: 'It can help you identify and stay away from 996 companies and behaviors, including:',
       point1: '1. Know the overtime situation of the new company on the first day of employment',
-      point2: '2. Identify the workaholics in the company',
-      point3: '3. Compare the overtime intensity of different projects',
+      point2: '2. Compare the overtime intensity of different projects',
     },
     safety: {
       title: 'Is It Safe',

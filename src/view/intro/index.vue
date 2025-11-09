@@ -17,13 +17,19 @@
         <article class="markdown-body">
           <div class="p1">{{ t('intro.howToUse.title') }}</div>
           <ul>
+            <p>{{ t('intro.howToUse.nodeJsTip') }}</p>
+            <div class="overflow-x">
+              <pre>npx code996</pre>
+            </div>
             <p>{{ t('intro.howToUse.localAnalysis') }}</p>
             <div class="overflow-x">
               <pre>curl -fsSL {{ t('intro.howToUse.scriptUrl') }} | bash</pre>
             </div>
             <p>
               {{ t('intro.howToUse.onlineAnalysis') }}
-              <a href="https://greasyfork.org/en/scripts/452007-gitlab-996-index-statistic" target="_blank">{{ t('intro.howToUse.userscript') }}</a>
+              <a href="https://greasyfork.org/en/scripts/452007-gitlab-996-index-statistic" target="_blank">
+                {{ t('intro.howToUse.userscript') }}
+              </a>
             </p>
           </ul>
         </article>
@@ -48,7 +54,6 @@
           <p>{{ t('intro.whatIsItFor.intro') }}</p>
           <p>{{ t('intro.whatIsItFor.point1') }}</p>
           <p>{{ t('intro.whatIsItFor.point2') }}</p>
-          <p>{{ t('intro.whatIsItFor.point3') }}</p>
         </article>
       </div>
       <div class="item">
@@ -122,4 +127,3 @@ const previewDemo = () => {
   })
 }
 </script>
-
