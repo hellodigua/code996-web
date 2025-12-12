@@ -1,0 +1,17 @@
+{
+  "name": "code996-online-analysis-frontend",
+  "version": "1.0.0",
+  "description": "Frontend integration for Code996 online analysis",
+  "main": "api.ts",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "code996",
+    "git",
+    "analysis",
+    "vue3"
+  ],
+  "author": "Code996",
+  "license": "MIT"
+}
