@@ -1,0 +1,41 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: code996-backend
+  
+  # CORS configuration
+  mvc:
+    cors:
+      allowed-origins: "*"
+      allowed-methods: GET, POST, OPTIONS
+      allowed-headers: "*"
+      max-age: 3600
+
+# Application configuration
+code996:
+  # Temporary directory for cloning repositories
+  temp-dir: ${java.io.tmpdir}/code996
+  
+  # Maximum repository size in MB (prevent abuse)
+  max-repo-size: 500
+  
+  # Analysis timeout in seconds
+  analysis-timeout: 300
+  
+  # Maximum commits to analyze (0 = unlimited)
+  max-commits: 10000
+  
+  # Cleanup old temp directories after minutes
+  cleanup-interval: 30
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.code996: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

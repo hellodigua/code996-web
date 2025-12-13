@@ -1,0 +1,37 @@
+# .gitignore for Code996 Backend
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Temporary directories
+temp/
+tmp/
+/code996/
+
+# OS
+.DS_Store
+Thumbs.db
