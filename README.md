@@ -1,8 +1,11 @@
+> [!IMPORTANT]
+> # 🚨 TIPS：本项目已归档
+>
+> 本项目已停止维护。新项目已迁移至 **[hellodigua/code996](https://github.com/hellodigua/code996)**，请前往新项目获取最新版本和后续更新。
+
 # code996-web
 
 code996 网页版，用于查看 code996 脚本的分析结果。
-
-当前项目是 1.0 版本，功能比较简单，新的 2.0 版本请参考 [code996](https://github.com/hellodigua/code996)
 
 Preview：https://hellodigua.github.io/code996/
 
