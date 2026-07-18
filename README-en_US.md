@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> # 🚨 TIPS: THIS PROJECT HAS BEEN ARCHIVED
+>
+> This project is no longer maintained. Development has moved to **[hellodigua/code996](https://github.com/hellodigua/code996)**. Please use the new project for the latest version and future updates.
+
 # code996
 
 code996 is an analytics tool that can be used to calculate the commit time distribution of a Git project and derive the coding intensity of that project.
